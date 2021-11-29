@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/process" method="POST">
+
+            <div class="ipt">
+                <label for="name">Name:</label>
+                <input name="name" id="name" type="text">
+            </div>
+            <div class="ipt">
+                <label for="local">Dojo Location:</label>
+                <select name="local" id="local">
+                    <option> -- Select A Location --</option>
+                    <option>Chicago</option>
+                    <option>Seattle</option>
+                    <option>Online</option>
+                    <option>Burbank</option>
+                    <option>Bellevue</option>
+                </select>
+            </div>
+            <div class="ipt">
+                <label for="language">Favorite Language:</label>
+                <select name="language" id="language">
+                    <option> -- Select A Language --</option>
+                    <option>HTML</option>
+                    <option>CCS</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>C#</option>
+                </select>
+            </div>
+            <div class="ipt">
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <button class="btn" type="submit" value="create answer">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
